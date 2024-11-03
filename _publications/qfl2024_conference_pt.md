@@ -11,4 +11,4 @@ paperurl: #'http://academicpages.github.io/files/paper3.pdf'
 citation: 'I. Jesán Velázquez Reséndiz (2024, June 04), Polarization dynamics of trapped polariton condensates with PT-symmetry'
 ---
 
-Talk presenting the results of the work developed in [Polarization dynamics of trapped polariton condensates with \\(\mathcal{PT}\\) symmetry](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.085312).
+Talk presenting the results of the work developed in [Polarization dynamics of trapped polariton condensates with PT symmetry](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.085312).
