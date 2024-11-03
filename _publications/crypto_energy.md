@@ -1,7 +1,7 @@
 ---
 title: "The money that does not exist: Cryptocurrencies and renewable energies"
 collection: publications
-category: scientific_dissemination
+category: divulgation
 permalink: /publication/crypto_energy
 excerpt: 'Analysis of the cryptocurrencies and their energy consumption'
 date: 05-09-2022
