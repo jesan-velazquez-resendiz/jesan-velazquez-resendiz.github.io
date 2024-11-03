@@ -1,5 +1,5 @@
 ---
-title: "Polarization dynamics of trapped polariton condensates with $\mathcal{PT}$ symmetry"
+title: "Polarization dynamics of trapped polariton condensates with PT symmetry"
 collection: publications
 category: manuscripts
 permalink: /publication/dynamics_polaritonic_condensate_PT-symmetry
