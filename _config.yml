@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Jesán VR"
   pronouns         : # example: "she/her"  
-  bio              : "Condensed matter, quantum many-body systems, auqntum computing and information"
+  bio              : "Condensed matter, quantum many-body systems, quantum computing and information"
   location         : "Mexico"
   employer         : "Physics Institute, UNAM"
   uri              : # URL
@@ -201,7 +201,7 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
-  math_engine: mathjax
+  math_engine: katex
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
