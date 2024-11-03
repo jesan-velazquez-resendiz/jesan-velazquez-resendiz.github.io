@@ -81,7 +81,7 @@ publication_category:
   manuscripts:
     title: 'Journal Articles'    
   conferences:
-    title: 'Conference Papers'
+    title: 'Conference Papers/Posters'
   science_dissemination:
     title: 'Science Dissemination Articles'
 
@@ -304,7 +304,7 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
+  #- jekyll-sitemap
   - jemoji
 
 # Mimic GitHub Pages with --safe
@@ -312,7 +312,7 @@ whitelist:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
+  #- jekyll-sitemap
   - jemoji
 
 
