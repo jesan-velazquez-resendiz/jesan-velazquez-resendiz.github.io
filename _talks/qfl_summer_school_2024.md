@@ -4,7 +4,6 @@ collection: talks
 type: "Talk"
 permalink: /talks/qfl_summer_school_2024
 venue: "QFL Summer School 2024, Physics Institute, UNAM"
-slidesurl: 'http://jesan-velazquez-resendiz.github.io/files/slides_qfl_summer_school_2024.pdf'
 date: 04-06-2024
 location: "Mexico City, Mexico"
 ---
