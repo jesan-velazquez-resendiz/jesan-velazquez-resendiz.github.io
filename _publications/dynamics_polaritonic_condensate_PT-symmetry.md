@@ -1,11 +1,11 @@
 ---
-title: "Paper Title Number 1"
+title: "Polarization dynamics of trapped polariton condensates with $\mathcal{PT}$ symmetry"
 collection: publications
 category: manuscripts
 permalink: /publication/dynamics_polaritonic_condensate_PT-symmetry
 excerpt: 'Polarization dynamics of trapped polariton condensates with Parity-Time symmetry'
 date: 29-02/2024
-venue: 'JPhys. Rev. B'
+venue: 'Phys. Rev. B'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.085312'
 citation: 'I. Jesán Velázquez-Reséndiz and Yuri G. Rubo, Phys. Rev. B 109, 085312'
