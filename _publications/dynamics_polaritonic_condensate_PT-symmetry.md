@@ -3,7 +3,7 @@ title: "Polarization dynamics of trapped polariton condensates with PT symmetry"
 collection: publications
 category: manuscripts
 permalink: /publication/dynamics_polaritonic_condensate_PT-symmetry
-excerpt: #'Polarization dynamics of trapped polariton condensates with Parity-Time symmetry'
+excerpt: 'Mean-field approximation for a polaritonic condensate'
 date: 29-02-2024
 venue: 'Phys. Rev. B'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
