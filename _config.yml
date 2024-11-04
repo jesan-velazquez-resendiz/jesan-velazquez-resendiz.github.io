@@ -96,6 +96,13 @@ projects_category:
   collaborations:
     title: 'Collaborations'
 
+# Teaching Category - The following the list of publication categories and their headings
+teaching_category:
+  assistant:
+    title: 'Teaching Assistant'
+  full:
+    title: 'Full Professor'
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
