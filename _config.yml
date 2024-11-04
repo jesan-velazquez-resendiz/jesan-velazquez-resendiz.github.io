@@ -21,7 +21,7 @@ repository               : "jesan-velazquez-resendiz/jesan-velazquez-resendiz.gi
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "foto.jpg"
   name             : "Jesán VR"
   pronouns         : # example: "she/her"  
   bio              : "Condensed matter, quantum many-body systems, quantum computing and information"

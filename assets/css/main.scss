@@ -39,3 +39,24 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+
+
+/* Tema claro por defecto */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  /* Tema oscuro */
+  .dark-theme {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+  }
+  
+  /* Aplica las variables de color */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
