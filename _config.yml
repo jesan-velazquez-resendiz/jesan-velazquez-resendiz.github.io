@@ -85,6 +85,17 @@ publication_category:
   science_dissemination:
     title: 'Science Dissemination Articles'
 
+# Projects Category - The following the list of publication categories and their headings
+projects_category:
+  research:
+    title: 'Research Projects'
+  personal:
+    title: 'Personal Projects'
+  institutional:
+    title: 'Institutional Projects'
+  collaborations:
+    title: 'Collaborations'
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
