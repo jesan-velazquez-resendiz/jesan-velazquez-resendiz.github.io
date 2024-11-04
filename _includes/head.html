@@ -17,29 +17,3 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
-
-
-
-
-<meta http-equiv="cleartype" content="on">
-
-<button id="theme-toggle">Toggle Theme</button>
-
-<script>
-  // Selecciona el botón de alternancia de tema
-  const themeToggle = document.getElementById('theme-toggle');
-  const currentTheme = localStorage.getItem('theme') || 'light';
-
-  // Aplica el tema guardado en localStorage si existe
-  if (currentTheme === 'dark') {
-    document.body.classList.add('dark-theme');
-  }
-
-  // Evento de alternancia de tema
-  themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-    // Guarda la preferencia del tema en localStorage
-    const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-    localStorage.setItem('theme', theme);
-  });
-</script>
