@@ -2,9 +2,9 @@
 title: "Electrcity and Magnetism (Undergraduate)"
 collection: teaching
 category: assistant
-permalink: /teaching/2025-2_electricity_magnetism_LIER
-excerpt: "Electricity and Magnetism class for the Renewable energy engineering bachelor (semester 2025-2)"
-date: 01-01-2025
+permalink: /teaching/2024-1_electricity_magnetism_LIER
+excerpt: "Electricity and Magnetism class for the Renewable energy engineering bachelor (semester 2024-1)"
+date: 01-08-2023
 venue: 'Renewable Energies Institute, UNAM'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: #'https://www.acmor.org/publicaciones/el-dinero-que-no-existe-criptomonedas-y-energ-as-renovables'

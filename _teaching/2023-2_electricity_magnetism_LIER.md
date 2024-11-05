@@ -2,9 +2,9 @@
 title: "Electrcity and Magnetism (Undergraduate)"
 collection: teaching
 category: assistant
-permalink: /teaching/2025-2_electricity_magnetism_LIER
-excerpt: "Electricity and Magnetism class for the Renewable energy engineering bachelor (semester 2025-2)"
-date: 01-01-2025
+permalink: /teaching/2023-2_electricity_magnetism_LIER
+excerpt: "Electricity and Magnetism class for the Renewable energy engineering bachelor (semester 2023-2)"
+date: 01-01-2023
 venue: 'Renewable Energies Institute, UNAM'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: #'https://www.acmor.org/publicaciones/el-dinero-que-no-existe-criptomonedas-y-energ-as-renovables'
@@ -19,4 +19,4 @@ The topics that were covered during the semester were:
 - Magnetic induction
 - Fundamentals of the magnetics properties of the matter
 
-You can see the full scheme [here](https://drive.google.com/file/d/0B_xgFQCM1I_VM2g3dDFsc2Zpdnc/view?resourcekey=0-I73oTpwETRipX-SdxauNFg). The full professors were [Yuri G. Rubo](https://www.ier.unam.mx/academicos/ygr/) and [Rocío Nava Lara](https://www.ier.unam.mx/academicos/rnl/produccion.html).
+You can see the full scheme [here](https://drive.google.com/file/d/0B_xgFQCM1I_VM2g3dDFsc2Zpdnc/view?resourcekey=0-I73oTpwETRipX-SdxauNFg). The full professors were [Yuri G. Rubo](https://www.ier.unam.mx/academicos/ygr/).
