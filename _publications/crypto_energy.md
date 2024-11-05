@@ -2,7 +2,7 @@
 title: "The money that does not exist: Cryptocurrencies and renewable energies"
 collection: publications
 category: science_dissemination
-permalink: /publication/crypto_energy
+permalink: /publications/crypto_energy
 excerpt: 'Analysis of the cryptocurrencies and their energy consumption'
 date: 05-09-2022
 venue: 'Academia de Ciencias de Morelos'
