@@ -8,7 +8,7 @@ date: #04-06-2024
 venue: #'QFL Summer School 2024'
 slidesurl: #'http://jesan-velazquez-resendiz.github.io/files/slides_qfl_summer_school_2024.pdf'
 paperurl: 'http://jesan-velazquez-resendiz.github.io/files/poster_ptsymmetry.pdf'
-citation: 'I. Jesán Velázquez Reséndiz and Yuri G. Rubo, Polarization dynamics of trapped polariton condensates with PT-symmetry'
+citation: #'I. Jesán Velázquez Reséndiz and Yuri G. Rubo, Polarization dynamics of trapped polariton condensates with PT-symmetry'
 ---
 
 Posters presenting the results of the work developed in [Polarization dynamics of trapped polariton condensates with \\(\mathcal{PT}\\) symmetry](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.085312).
