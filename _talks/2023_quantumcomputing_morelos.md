@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 permalink: /talks/2023_quantumcomputing_morelos
 venue: "Morelos Science Student Seminar, Institute of Physical Sciences, UNAM"
-date: 04-27-2023
+date: 27-04-2023
 location: "Morelos, Mexico"
 ---
 
