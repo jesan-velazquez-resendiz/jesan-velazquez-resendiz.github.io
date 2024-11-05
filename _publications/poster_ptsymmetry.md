@@ -2,7 +2,7 @@
 title: "Poster: Polarization dynamics of trapped polariton condensates with PT symmetry"
 collection: publications
 category: conferences
-permalink: /publication/poster_ptsymmetry
+permalink: /publications/poster_ptsymmetry
 excerpt: 'Posters for the Polarization dynamics of trapped polariton condensates with PT symmetry'
 date: 04-06-2024
 venue: 'QFL Summer School 2024'
