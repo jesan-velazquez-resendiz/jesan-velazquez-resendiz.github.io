@@ -8,7 +8,7 @@ date: 2025-2
 venue: 'Renewable Energies Institute, UNAM'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: #'https://www.acmor.org/publicaciones/el-dinero-que-no-existe-criptomonedas-y-energ-as-renovables'
-citation: #'I. Jesán Velázquez-Reséndiz and Yuri G. Rubo, ACMor (2022, September 05)'
+citation: '.'
 ---
 
 The topics that were covered during the semester were:
