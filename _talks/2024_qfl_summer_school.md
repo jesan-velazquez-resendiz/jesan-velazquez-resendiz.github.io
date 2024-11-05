@@ -2,7 +2,7 @@
 title: "QFL Summer School 2024: Polarization dynamics of a polaritonic condensates with PT symmetry"
 collection: talks
 type: "Talk"
-permalink: /talks/qfl_summer_school_2024
+permalink: /talks/2024_qfl_summer_school
 venue: "QFL Summer School 2024, Physics Institute, UNAM"
 date: 04-06-2024
 location: "Mexico City, Mexico"

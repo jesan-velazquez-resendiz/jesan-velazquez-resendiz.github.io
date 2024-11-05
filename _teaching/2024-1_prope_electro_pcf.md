@@ -1,5 +1,5 @@
 ---
-title: "classical Electrodynamics (Propaedeutic)"
+title: "Classical Electrodynamics (Propaedeutic)"
 collection: teaching
 category: assistant
 permalink: /teaching/2024-1_prope_electro_pcf
