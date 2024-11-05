@@ -4,11 +4,11 @@ collection: teaching
 category: assistant
 permalink: /teaching/2025-2_electricity_magnetism_LIER
 excerpt: "Electricity and Magnetism class for the Renewable energy engineering bachelor (semester 2025-2)"
-date: 2025-2
+date: Semester2025-2
 venue: 'Renewable Energies Institute, UNAM'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: #'https://www.acmor.org/publicaciones/el-dinero-que-no-existe-criptomonedas-y-energ-as-renovables'
-citation: '.'
+citation: #'.'
 ---
 
 The topics that were covered during the semester were:
