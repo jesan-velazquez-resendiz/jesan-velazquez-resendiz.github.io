@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publications/poster_ptsymmetry
 excerpt: 'Posters for the Polarization dynamics of trapped polariton condensates with PT symmetry'
-date: 2023-2024
+date: 10-10-2024
 venue: '.'
 slidesurl: #'http://jesan-velazquez-resendiz.github.io/files/slides_qfl_summer_school_2024.pdf'
 paperurl: 'http://jesan-velazquez-resendiz.github.io/files/poster_ptsymmetry.pdf'
