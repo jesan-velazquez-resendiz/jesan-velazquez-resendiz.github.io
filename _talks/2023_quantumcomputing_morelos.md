@@ -8,6 +8,6 @@ date: 27-04-2023
 location: "Morelos, Mexico"
 ---
 
-[Slides on PDF](http://jesan-velazquez-resendiz.github.io/files/slides_qfl_summer_school_2024.pdf)
+[Slides on PDF](http://jesan-velazquez-resendiz.github.io/files/ICF_divulgacion.pdf)
 
 Talk presenting the basis of quantum computing, add more when having the pp.
