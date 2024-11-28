@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Jesán Velázquez-Reséndiz / Physicist"
+title                    : "Jesán Velázquez-Reséndiz / Physics"
 title_separator          : "-"
 name                     : &name "Jesán Velázquez-Reséndiz"
 description              : &description "Quantum physicist in condensed matter and many-body systems"
@@ -25,7 +25,7 @@ author:
   name             : "Jesán VR"
   pronouns         : # example: "she/her"  
   bio              : "Condensed matter, quantum many-body systems, quantum computing and information"
-  location         : "Mexico"
+  location         : "Mexico (Traveling to France during December 2024-January 2025)"
   employer         : "Physics Institute, UNAM"
   uri              : # URL
   email            : "isaacj@estudiantes.fisica.unam.mx" 

@@ -49,5 +49,5 @@ Extras
 ======
 In addition to being an enthusiastic physicist:
 - I am a card magician!
-- FFootball is one of my passions (Barcelona fan over here!), but I also like volleyball and handball. I love going to the gym, just for the health benefits.
+- Football is one of my passions (Barcelona fan over here!), but I also like volleyball and handball. I love going to the gym, just for the health benefits.
 - Videogames are something I really like. If you ask me my top 5, I would say Life is Strange, Outlastt, Minecraft, Alan Wake 2, Fears to Fathom. But there are more, even I didn't play all of them. And yes, I like seeing streaming about videogames (mostly from streamers from Spain, I like more their style).
