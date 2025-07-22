@@ -24,9 +24,9 @@ author:
   avatar           : "foto.jpg"
   name             : "Jesán VR"
   pronouns         : # example: "she/her"  
-  bio              : "Quantum open systems and quantum error correction"
+  bio              : "Open quantum systems and quantum error correction"
   location         : "Spain (now traveling to France)"
-  employer         : "Instituto de Física Teórica, UAM"
+  employer         : "Institute for Theoretical Physics, UAM-CSIC"
   uri              : "https://www.ift.uam-csic.es/" # url
   email            : "jesanvelazquez@gmail.com" 
 
