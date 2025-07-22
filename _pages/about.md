@@ -1,28 +1,22 @@
 ---
 permalink: /
-title: "Who am I?"
+title: "A brief introduction of myself..."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Who am I? The most difficult question to answer, there is no correct answer. But, here goes!
+I am currently PhD student at [IFT, UAM](https://www.ift.uam-csic.es/) conducting research on Quantum Error Correction (QEC). In addition, I am interested in the topics of quantum open systems, i.e. polaritons, and the connection of quantum mechanics with life, sociology and philosophy.
 
 Academia
 ======
-I am a master's student in physics. My research is about quantum many-body systems, non-Hermitian Hamiltonians and out-of-equilibrium systems. I study a polariton condensate and analyze their semiclassical limit where the Parity-Time (\\(\mathcal{PT}\\)) symmetry is present. I am studying the quantum regime through the Lindblad master equation formalism, where I am calculating its properties with numerical methods. I've participated as a speaker in advanced Quantum Fluids of Light conferences and in the National Physics Congress of Mexico.
+I did my master's degree in physics at the [Instituto de Física, UNAM](https://www.fisica.unam.mx/) in Mexico with [Dr. Yuri G. Rubo](https://www.ier.unam.mx/academicos/ygr/) as my supervisor. My research focused on studying quantum properties and performing a semiclassical analysis of a polaritonic condensate with Parity-Time symmetry (\\(\mathcal{PT}\\)-symmetry) when the dissipation and pumping in the system are balanced. This is significant, as polaritonic condensates exhibit quantum properties at room temperature, making them strong candidates for quantum technologies. Throughout this work, I have carried out a mean-field analysis of the master equation governing the system, solved the spin dynamics in the case of \\(\mathcal{PT}\\)-symmetry, analyzed the fixed points and classical chaos in the system, and conducted a numerical analysis of the master equation.
 
-In addition to my reasearch, I am familiar with mean-field analysis (numerical and theoretical), quantum field theory for condensed matter and atomic systems, Gross-Pitaevski equation, Feynman diagrams, Green functions, Lindblad master equations, advanced quantum mechanics, and numerical analysis of quantum many-body systems.
+I am now a PhD student at [IFT, UAM](https://www.ift.uam-csic.es/) in Madrid, under the supervision of [Alejandro Bermudez Carballo](https://www.ift.uam-csic.es/en/one-member/503). My current research centers on Quantum Error Correction (QEC). I remain deeply interested in quantum open systems and in exploring conceptual bridges between quantum mechanics and life sciences—topics that, despite lacking formal theoretical frameworks, I believe hold important open questions worth investigating.
 
-I am passionate about [teaching](https://jesan-velazquez-resendiz.github.io//teaching/). I have been a teaching assitant in three undergraduate courses for electromagnetism and a preparatory course for the Physics Graduate program at UNAM, Mexico. Sharing knowledge is one of my biggest dreams.
-
-My research interests lie in the understanding of condensed matter, quantum many-body systems and quantum fluids of light. Specifically, the connection with quantum information (i.e. quantum chaos and scrambling) and the possible apllications in quantum technologies, such as quantum computing.
+I am passionate about [teaching](https://jesan-velazquez-resendiz.github.io//teaching/). I have been a teaching assistant in three undergraduate courses for electromagnetism and a preparatory course for the Physics Graduate program at UNAM, Mexico. Sharing knowledge is one of my biggest dreams.
 
 Extras
 ======
-I am a beginner card magician, and I love how card magic connects with quantum physics and how you can explain quantum effects with cards! Yes, it's possible!
-
-Sports are part of my life since I was a child. Football is my biggest passion, that's why I know the best team in the world is the FC Barcelona (Visca Barça)! I am a fan of volleyball and handball too.
-
-I love reading science, science fiction and horror (Lovecraft is my favorite in this). And learning about sociology was in my life since I was a little kid, so from time to time I read about it.
+Beyond academic life, I enjoy electronic music—particularly artists such as John Digweed, Chemical Brothers, Sasha, Hernán Cattáneo, Patrice Bäumel, among others. Football has been a lifelong passion and source of personal strength, but I also enjoy playing volleyball and handball. Additionally, I have a strong interest in magic, especially card magic (in which I am a beginner). I find it fascinating how card tricks can capture the essence of both life and quantum mechanics; in fact, many aspects of quantum phenomena can be metaphorically illustrated through a well-executed performance.
