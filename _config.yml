@@ -25,9 +25,9 @@ author:
   name             : "Jesán VR"
   pronouns         : # example: "she/her"  
   bio              : "Open quantum systems and quantum error correction"
-  location         : "Spain (now traveling to France)"
-  employer         : "IFT, UAM-CSIC"
-  uri              : "https://www.ift.uam-csic.es/" # url
+  location         : "Madrid, Spain"
+  employer         : '<a href="https://www.ift.uam-csic.es/">IFT, UAM-CSIC</a>'
+  uri              : # "https://www.ift.uam-csic.es/" # url
   email            : "jesanvelazquez@gmail.com" 
 
   # Academic websites
