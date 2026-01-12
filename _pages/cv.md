@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-The complete version of my CV can be found [here](http://jesan-velazquez-resendiz.github.io/files/CV.pdf).
+The complete version of my CV can be found [here](http://jesan-velazquez-resendiz.github.io/files/cv-jesan.pdf).
 
 Education
 ======
