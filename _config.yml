@@ -6,6 +6,8 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
+# For documentation do to: https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-repository
+
 # Theme Settings
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "neon"
