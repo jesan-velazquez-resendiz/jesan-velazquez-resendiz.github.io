@@ -6,6 +6,10 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "neon"
+
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "Jesán Velázquez-Reséndiz / Physics"
