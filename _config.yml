@@ -8,7 +8,6 @@
 
 # Theme Settings
 #remote_theme: "mmistakes/minimal-mistakes"
-theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "neon"
 
 # Basic Site Settings
