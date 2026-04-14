@@ -6,7 +6,7 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jemoji'
   gem 'webrick', '~> 1.8'
+  gem "jekyll-remote-theme"
 end
 
 gem 'github-pages'
-gem "jekyll-remote-theme"
