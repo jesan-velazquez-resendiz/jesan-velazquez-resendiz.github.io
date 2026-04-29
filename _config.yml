@@ -14,9 +14,9 @@ minimal_mistakes_skin: "neon"
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Jesán Velázquez-Reséndiz / Physics"
+title                    : "Isaac Velázquez-Reséndiz / Physics"
 title_separator          : "-"
-name                     : &name "Jesán Velázquez-Reséndiz"
+name                     : &name "Isaac Velázquez-Reséndiz"
 description              : &description "Quantum physicist in condensed matter and many-body systems"
 url                      : https://jesan-velazquez-resendiz.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -28,11 +28,11 @@ repository               : "jesan-velazquez-resendiz/jesan-velazquez-resendiz.gi
 author:
   # Biographic information
   avatar           : "foto.jpeg"
-  name             : "Jesán VR"
+  name             : "Isaac VR"
   pronouns         : # example: "she/her"  
-  bio              : "Open quantum systems and quantum error correction"
-  location         : "Madrid, Spain"
-  employer         : '<a href="https://www.ift.uam-csic.es/">IFT, UAM-CSIC</a>'
+  bio              : "Open quantum systems and magnonics"
+  location         : "Brest, France"
+  employer         : '<a href="https://www.imt-atlantique.fr/fr">IMT Atlantique - Brest</a>'
   uri              : # "https://www.ift.uam-csic.es/" # url
   email            : "jesanvelazquez@gmail.com" 
 
