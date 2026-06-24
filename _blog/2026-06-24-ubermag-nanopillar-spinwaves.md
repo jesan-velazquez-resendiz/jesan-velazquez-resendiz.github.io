@@ -1,7 +1,7 @@
 ---
 title: 'Spin wave dispersion in a magnetic nanopillar with Ubermag'
 collection: blog
-category: simulations
+category: micromagnetics
 date: 2026-06-24
 permalink: /blog/ubermag-nanopillar-spinwaves/
 excerpt: 'Step-by-step micromagnetic simulation of spin wave propagation along a magnetic nanopillar using Ubermag (OOMMF). We reproduce the nmag probe example: relax the equilibrium state, excite spin waves with a short field pulse, and extract the dispersion relation via 2D FFT.'

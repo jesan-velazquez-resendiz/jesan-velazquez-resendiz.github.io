@@ -29,4 +29,58 @@
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<!-- Layout width override -->
+<style>
+  #main {
+    max-width: 1600px !important;
+  }
+</style>
+
+<!-- Dark code blocks to match neon theme -->
+<style>
+  div.highlighter-rouge,
+  figure.highlight {
+    background-color: #0d0d1a !important;
+    border-color: #2a2a4a !important;
+  }
+
+  div.highlighter-rouge::before,
+  figure.highlight::before {
+    background-color: #1a1a30 !important;
+    color: #666 !important;
+  }
+
+  .highlight,
+  .highlight pre {
+    background-color: #0d0d1a !important;
+    color: #cdd6f4 !important;
+  }
+
+  /* inline code */
+  code.highlighter-rouge {
+    background-color: #1a1a30 !important;
+    color: #cba6f7 !important;
+    border: 1px solid #2a2a4a !important;
+  }
+
+  /* token colors — dark-friendly palette */
+  .highlight .c,  .highlight .cm, .highlight .c1, .highlight .cs { color: #6c7086 !important; } /* comments */
+  .highlight .k,  .highlight .kd, .highlight .kn, .highlight .kp,
+  .highlight .kr, .highlight .kc                                   { color: #cba6f7 !important; } /* keywords */
+  .highlight .s,  .highlight .s1, .highlight .s2, .highlight .sb,
+  .highlight .sc, .highlight .sd, .highlight .si, .highlight .sx,
+  .highlight .ss                                                    { color: #a6e3a1 !important; } /* strings */
+  .highlight .m,  .highlight .mf, .highlight .mh, .highlight .mi,
+  .highlight .mo, .highlight .il                                    { color: #fab387 !important; } /* numbers */
+  .highlight .nf, .highlight .nc, .highlight .nd, .highlight .nv,
+  .highlight .vc, .highlight .vg, .highlight .vi                   { color: #89b4fa !important; } /* functions/vars */
+  .highlight .nb, .highlight .bp                                    { color: #89dceb !important; } /* builtins */
+  .highlight .o,  .highlight .ow                                    { color: #89dceb !important; } /* operators */
+  .highlight .n,  .highlight .p                                     { color: #cdd6f4 !important; } /* default text */
+  .highlight .err                                                   { color: #f38ba8 !important; } /* errors */
+  .highlight .nt                                                     { color: #f38ba8 !important; } /* tags */
+  .highlight .na                                                     { color: #89b4fa !important; } /* attributes */
+  .highlight .no, .highlight .ni, .highlight .ne                    { color: #fab387 !important; } /* constants */
+</style>
+
 <!-- end custom head snippets -->

@@ -115,7 +115,7 @@ blog_category:
     title: 'Opinion'
   informative:
     title: 'Informative'
-  simulations:
+  micromagnetics:
     title: 'Micromagnetic Simulations'
 
 # Site Settings
