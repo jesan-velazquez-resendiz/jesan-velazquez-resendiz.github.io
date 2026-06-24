@@ -115,6 +115,8 @@ blog_category:
     title: 'Opinion'
   informative:
     title: 'Informative'
+  simulations:
+    title: 'Micromagnetic Simulations'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
