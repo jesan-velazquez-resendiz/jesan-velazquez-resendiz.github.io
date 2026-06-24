@@ -6,7 +6,8 @@ author_profile: true
 ---
 
 {% include base_path %}
-{% include group-by-array collection=site.posts field="categories" %}
+{% assign all_posts = site.posts | concat: site.blog %}
+{% include group-by-array collection=all_posts field="category" %}
 
 {% for category in group_names %}
   {% assign posts = group_items[forloop.index0] %}
