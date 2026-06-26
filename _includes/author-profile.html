@@ -20,6 +20,14 @@
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
+  {% if author.institution_logo %}
+  <div class="author__institution-logo">
+    <a href="https://www.imt-atlantique.fr/fr" target="_blank" rel="noopener">
+      <img src="{{ author.institution_logo }}" alt="IMT Atlantique" class="institution-logo">
+    </a>
+  </div>
+  {% endif %}
+
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">

@@ -31,8 +31,9 @@ author:
   name             : "Isaac VR"
   pronouns         : # example: "she/her"  
   bio              : "Open quantum systems and magnonics"
-  location         : "Brest, France"
+  location         : "🇫🇷 Brest, France"
   employer         : '<a href="https://www.imt-atlantique.fr/fr">IMT Atlantique - Brest</a>'
+  institution_logo : "/images/imtatlantique.svg"
   uri              : # "https://www.ift.uam-csic.es/" # url
   email            : "jesanvelazquez@gmail.com" 
 
