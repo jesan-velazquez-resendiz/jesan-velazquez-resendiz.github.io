@@ -2,6 +2,19 @@
 
 <!-- start custom head snippets -->
 
+<!-- Apply saved theme before paint to avoid flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      var preferLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      if (t === 'light' || (!t && preferLight)) {
+        document.documentElement.classList.add('light-mode');
+      }
+    } catch (e) {}
+  })();
+</script>
+
 <link rel="apple-touch-icon" sizes="57x57" href="{{ base_path }}/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
 <link rel="apple-touch-icon" sizes="60x60" href="{{ base_path }}/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
 <link rel="apple-touch-icon" sizes="72x72" href="{{ base_path }}/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
@@ -38,6 +51,193 @@
   .page__content p {
     text-align: justify;
   }
+</style>
+
+<!-- Light mode overrides (neon skin is dark by default) -->
+<style>
+  /* --- Structure --- */
+  html.light-mode body {
+    background-color: #f5f5f5 !important;
+    color: #333 !important;
+  }
+
+  /* --- Top navigation --- */
+  html.light-mode .masthead {
+    background-color: #fff !important;
+    border-bottom: 1px solid #ddd !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08) !important;
+  }
+  html.light-mode .greedy-nav {
+    background-color: #fff !important;
+  }
+  html.light-mode .greedy-nav a,
+  html.light-mode .greedy-nav .masthead__menu-item a {
+    color: #333 !important;
+  }
+  html.light-mode .greedy-nav a:hover {
+    color: #000 !important;
+  }
+  html.light-mode .greedy-nav .visible-links a::before {
+    background: #333 !important;
+  }
+  html.light-mode .greedy-nav button {
+    background-color: #fff !important;
+  }
+  html.light-mode .navicon,
+  html.light-mode .navicon::before,
+  html.light-mode .navicon::after {
+    background: #333 !important;
+  }
+
+  /* --- Author sidebar --- */
+  html.light-mode .sidebar {
+    background: transparent !important;
+  }
+  html.light-mode .author__name {
+    color: #222 !important;
+  }
+  html.light-mode .author__bio,
+  html.light-mode .author__content {
+    color: #555 !important;
+  }
+  html.light-mode .author__urls a,
+  html.light-mode .author__urls-wrapper a {
+    color: #444 !important;
+  }
+  html.light-mode .author__urls a:hover {
+    color: #000 !important;
+  }
+
+  /* --- Page content --- */
+  html.light-mode .page__content {
+    color: #333 !important;
+  }
+  html.light-mode .page__content h1,
+  html.light-mode .page__content h2,
+  html.light-mode .page__content h3,
+  html.light-mode .page__content h4 {
+    color: #111 !important;
+  }
+  html.light-mode .page__content h2 {
+    border-bottom-color: #ddd !important;
+  }
+  html.light-mode .page__title {
+    color: #111 !important;
+  }
+  html.light-mode .page__meta {
+    color: #666 !important;
+  }
+
+  /* --- Links --- */
+  html.light-mode a {
+    color: #5046e5 !important;
+  }
+  html.light-mode a:hover {
+    color: #3730a3 !important;
+  }
+
+  /* --- Archive / blog list --- */
+  html.light-mode .archive__item-title a {
+    color: #222 !important;
+  }
+  html.light-mode .archive__item-excerpt {
+    color: #555 !important;
+  }
+  html.light-mode .archive__subtitle {
+    color: #111 !important;
+    border-bottom-color: #ddd !important;
+  }
+
+  /* --- Footer --- */
+  html.light-mode .page__footer {
+    background-color: #e8e8e8 !important;
+    color: #555 !important;
+    border-top: 1px solid #ccc !important;
+  }
+  html.light-mode .page__footer a {
+    color: #333 !important;
+  }
+  html.light-mode .page__footer-follow .social-icons .fas,
+  html.light-mode .page__footer-follow .social-icons .fab {
+    color: #555 !important;
+  }
+
+  /* --- Tables --- */
+  html.light-mode table {
+    color: #333 !important;
+  }
+  html.light-mode th {
+    background-color: #eee !important;
+    color: #111 !important;
+    border-color: #ccc !important;
+  }
+  html.light-mode td {
+    border-color: #ddd !important;
+  }
+
+  /* --- Code blocks: revert to light --- */
+  html.light-mode div.highlighter-rouge,
+  html.light-mode figure.highlight {
+    background-color: #f6f8fa !important;
+    border-color: #e1e4e8 !important;
+  }
+  html.light-mode div.highlighter-rouge::before,
+  html.light-mode figure.highlight::before {
+    background-color: #e1e4e8 !important;
+    color: #555 !important;
+  }
+  html.light-mode .highlight,
+  html.light-mode .highlight pre {
+    background-color: #f6f8fa !important;
+    color: #24292e !important;
+  }
+  html.light-mode code.highlighter-rouge {
+    background-color: #eef0f3 !important;
+    color: #6f42c1 !important;
+    border: 1px solid #ddd !important;
+  }
+  /* Revert token colors to Solarized Light */
+  html.light-mode .highlight .c,
+  html.light-mode .highlight .cm,
+  html.light-mode .highlight .c1,
+  html.light-mode .highlight .cs  { color: #93a1a1 !important; }
+  html.light-mode .highlight .k,
+  html.light-mode .highlight .kd,
+  html.light-mode .highlight .kn,
+  html.light-mode .highlight .kp,
+  html.light-mode .highlight .kr,
+  html.light-mode .highlight .kc  { color: #859900 !important; }
+  html.light-mode .highlight .s,
+  html.light-mode .highlight .s1,
+  html.light-mode .highlight .s2,
+  html.light-mode .highlight .sb,
+  html.light-mode .highlight .sc,
+  html.light-mode .highlight .si,
+  html.light-mode .highlight .sx,
+  html.light-mode .highlight .ss  { color: #2aa198 !important; }
+  html.light-mode .highlight .m,
+  html.light-mode .highlight .mf,
+  html.light-mode .highlight .mi,
+  html.light-mode .highlight .mh,
+  html.light-mode .highlight .mo,
+  html.light-mode .highlight .il  { color: #2aa198 !important; }
+  html.light-mode .highlight .nf,
+  html.light-mode .highlight .nc,
+  html.light-mode .highlight .nd,
+  html.light-mode .highlight .nv,
+  html.light-mode .highlight .vc,
+  html.light-mode .highlight .vg,
+  html.light-mode .highlight .vi  { color: #22b3eb !important; }
+  html.light-mode .highlight .nb,
+  html.light-mode .highlight .bp  { color: #B58900 !important; }
+  html.light-mode .highlight .o,
+  html.light-mode .highlight .ow  { color: #859900 !important; }
+  html.light-mode .highlight .n,
+  html.light-mode .highlight .p   { color: #586e75 !important; }
+  html.light-mode .highlight .err { color: #dc322f !important; }
+  html.light-mode .highlight .no,
+  html.light-mode .highlight .ni,
+  html.light-mode .highlight .ne  { color: #cb4b16 !important; }
 </style>
 
 <!-- Dark code blocks to match neon theme -->
