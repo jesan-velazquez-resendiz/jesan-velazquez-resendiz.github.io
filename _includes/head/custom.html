@@ -2,24 +2,37 @@
 
 <!-- start custom head snippets -->
 
-<!-- Apply saved theme before paint to avoid flash; expose toggleTheme globally -->
+<!-- Apply saved/preferred theme before paint (no flash); uses academicpages data-theme system -->
 <script>
   (function () {
     try {
       var t = localStorage.getItem('theme');
-      var preferLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-      if (t === 'light' || (!t && preferLight)) {
-        document.documentElement.classList.add('light-mode');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (t === 'dark' || (!t && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
       }
     } catch (e) {}
   })();
 
   function toggleTheme() {
-    var isLight = document.documentElement.classList.toggle('light-mode');
-    try { localStorage.setItem('theme', isLight ? 'light' : 'dark'); } catch (e) {}
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      try { localStorage.setItem('theme', 'light'); } catch (e) {}
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      try { localStorage.setItem('theme', 'dark'); } catch (e) {}
+    }
     var icon = document.getElementById('theme-icon');
-    if (icon) { icon.textContent = isLight ? '🌙' : '☀️'; }
+    if (icon) { icon.textContent = isDark ? '🌙' : '☀️'; }
   }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var icon = document.getElementById('theme-icon');
+    if (icon) {
+      icon.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+    }
+  });
 </script>
 
 <link rel="apple-touch-icon" sizes="57x57" href="{{ base_path }}/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
@@ -49,17 +62,16 @@
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<!-- Layout width override + justified text + theme toggle button -->
+<!-- Layout width + justified text + toggle button -->
 <style>
   #main {
     max-width: 1600px !important;
   }
-
   .page__content p {
     text-align: justify;
   }
 
-  /* Make masthead a flex row so the button sits beside the nav */
+  /* Masthead flex layout so toggle button sits beside the nav */
   .masthead__inner-wrap {
     display: flex !important;
     align-items: center !important;
@@ -69,346 +81,34 @@
     min-width: 0 !important;
   }
 
-  /* Toggle button styling */
+  /* Toggle button */
   #theme-toggle {
     background: none;
-    border: 2px solid rgba(255,255,255,0.5);
+    border: 2px solid rgba(0,0,0,0.25);
     border-radius: 8px;
     cursor: pointer;
+    color: var(--global-masthead-link-color, #333);
     font-size: 1.1em;
     line-height: 1;
     padding: 4px 10px;
     margin-right: 0.6em;
-    height: auto;
     display: flex;
     align-items: center;
     flex-shrink: 0;
     transition: border-color 0.2s, background 0.2s;
   }
   #theme-toggle:hover {
-    background: rgba(255,255,255,0.15);
+    border-color: var(--global-base-color, #2f7f93);
+    background: rgba(0,0,0,0.05);
+  }
+  html[data-theme="dark"] #theme-toggle {
+    border-color: rgba(255,255,255,0.4);
+    color: var(--global-masthead-link-color, #fff);
+  }
+  html[data-theme="dark"] #theme-toggle:hover {
     border-color: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.1);
   }
-  html.light-mode #theme-toggle {
-    border-color: rgba(192,38,211,0.5) !important;
-  }
-  html.light-mode #theme-toggle:hover {
-    background: rgba(192,38,211,0.08) !important;
-    border-color: #c026d3 !important;
-  }
-</style>
-
-<!-- Light mode overrides (neon skin is dark by default) -->
-<style>
-  /* === LIGHT MODE === */
-
-  /* Body */
-  html.light-mode body,
-  html.light-mode body.layout--single,
-  html.light-mode body.layout--archive {
-    background-color: #ffffff !important;
-    color: #111827 !important;
-  }
-
-  /* Masthead */
-  html.light-mode .masthead {
-    background-color: #ffffff !important;
-    border-bottom: 2px solid #f3e8ff !important;
-    box-shadow: 0 2px 10px rgba(192,38,211,0.07) !important;
-  }
-  html.light-mode .greedy-nav {
-    background-color: #ffffff !important;
-  }
-  html.light-mode .greedy-nav button {
-    background-color: #ffffff !important;
-  }
-  html.light-mode .navicon,
-  html.light-mode .navicon::before,
-  html.light-mode .navicon::after {
-    background: #111827 !important;
-  }
-  html.light-mode .site-title,
-  html.light-mode .masthead__menu-item--lg a,
-  html.light-mode .masthead__menu-item a,
-  html.light-mode .greedy-nav a {
-    color: #111827 !important;
-  }
-  html.light-mode .masthead__menu-item a:hover,
-  html.light-mode .greedy-nav a:hover {
-    color: #c026d3 !important;
-  }
-  html.light-mode .greedy-nav .visible-links a::before {
-    background: #c026d3 !important;
-  }
-  html.light-mode .greedy-nav .hidden-links {
-    background: #ffffff !important;
-    border: 1px solid #e9d5ff !important;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
-  }
-  html.light-mode .greedy-nav .hidden-links a {
-    color: #111827 !important;
-  }
-  html.light-mode .greedy-nav .hidden-links a:hover {
-    color: #c026d3 !important;
-    background: #fdf4ff !important;
-  }
-
-  /* All links — magenta accent */
-  html.light-mode a,
-  html.light-mode a:link,
-  html.light-mode a:visited {
-    color: #c026d3 !important;
-  }
-  html.light-mode a:hover,
-  html.light-mode a:active {
-    color: #a21caf !important;
-  }
-  /* Nav links stay dark */
-  html.light-mode .greedy-nav a,
-  html.light-mode .greedy-nav a:link,
-  html.light-mode .greedy-nav a:visited,
-  html.light-mode .masthead__menu-item a,
-  html.light-mode .masthead__menu-item a:link,
-  html.light-mode .masthead__menu-item a:visited {
-    color: #111827 !important;
-  }
-
-  /* Author sidebar */
-  html.light-mode .sidebar,
-  html.light-mode .sidebar.sticky {
-    background: transparent !important;
-    opacity: 1 !important;
-  }
-  html.light-mode .author__name,
-  html.light-mode .author__name a {
-    color: #111827 !important;
-  }
-  html.light-mode .author__bio,
-  html.light-mode .author__content,
-  html.light-mode .author__content p {
-    color: #374151 !important;
-  }
-  html.light-mode .author__urls-wrapper {
-    background: transparent !important;
-  }
-  html.light-mode .author__urls,
-  html.light-mode .author__urls a {
-    color: #374151 !important;
-    background: transparent !important;
-  }
-  html.light-mode .author__urls a:hover {
-    color: #c026d3 !important;
-  }
-  html.light-mode .author__urls li {
-    border-top-color: #f3e8ff !important;
-  }
-
-  /* Page content text */
-  html.light-mode .page__content,
-  html.light-mode .page__content p,
-  html.light-mode .page__content li,
-  html.light-mode .page__content dd,
-  html.light-mode .page__content dt {
-    color: #111827 !important;
-  }
-  html.light-mode .page__title {
-    color: #0f172a !important;
-  }
-  html.light-mode .page__content h1,
-  html.light-mode .page__content h2,
-  html.light-mode .page__content h3,
-  html.light-mode .page__content h4,
-  html.light-mode .page__content h5,
-  html.light-mode .page__content h6 {
-    color: #0f172a !important;
-  }
-  html.light-mode .page__content h2 {
-    border-bottom-color: #e9d5ff !important;
-  }
-  html.light-mode .page__meta,
-  html.light-mode .page__meta p,
-  html.light-mode .page__date {
-    color: #6b7280 !important;
-  }
-  html.light-mode .page__taxonomy-item {
-    border-color: #e9d5ff !important;
-    color: #374151 !important;
-  }
-  html.light-mode .page__taxonomy-item:hover {
-    color: #c026d3 !important;
-    border-color: #c026d3 !important;
-  }
-
-  /* Archive / blog list */
-  html.light-mode .archive__item-title,
-  html.light-mode .archive__item-title a {
-    color: #0f172a !important;
-  }
-  html.light-mode .archive__item-excerpt,
-  html.light-mode .archive__item-excerpt p {
-    color: #374151 !important;
-  }
-  html.light-mode .archive__subtitle {
-    color: #0f172a !important;
-    border-bottom-color: #e9d5ff !important;
-  }
-  html.light-mode .list__item .page__meta {
-    color: #6b7280 !important;
-  }
-
-  /* Footer */
-  html.light-mode .page__footer {
-    background-color: #fdf4ff !important;
-    color: #374151 !important;
-    border-top: 2px solid #e9d5ff !important;
-  }
-  html.light-mode .page__footer a,
-  html.light-mode .page__footer a:link,
-  html.light-mode .page__footer a:visited {
-    color: #374151 !important;
-  }
-  html.light-mode .page__footer a:hover {
-    color: #c026d3 !important;
-  }
-  html.light-mode .page__footer-follow li strong {
-    color: #111827 !important;
-  }
-
-  /* Tables */
-  html.light-mode table {
-    color: #111827 !important;
-    border-color: #e9d5ff !important;
-  }
-  html.light-mode th {
-    background-color: #fdf4ff !important;
-    color: #0f172a !important;
-    border-color: #d8b4fe !important;
-  }
-  html.light-mode td {
-    border-color: #f3e8ff !important;
-    color: #111827 !important;
-  }
-  html.light-mode tr:nth-child(even) td {
-    background-color: #fdf4ff !important;
-  }
-
-  /* Blockquotes */
-  html.light-mode blockquote {
-    color: #374151 !important;
-    border-left-color: #c026d3 !important;
-    background: #fdf4ff !important;
-  }
-
-  /* Code blocks */
-  html.light-mode div.highlighter-rouge,
-  html.light-mode figure.highlight {
-    background-color: #f9fafb !important;
-    border-color: #e9d5ff !important;
-  }
-  html.light-mode div.highlighter-rouge::before,
-  html.light-mode figure.highlight::before {
-    background-color: #f3e8ff !important;
-    color: #6b7280 !important;
-  }
-  html.light-mode .highlight,
-  html.light-mode .highlight pre {
-    background-color: #f9fafb !important;
-    color: #24292e !important;
-  }
-  html.light-mode code.highlighter-rouge {
-    background-color: #fdf4ff !important;
-    color: #a21caf !important;
-    border: 1px solid #e9d5ff !important;
-  }
-  /* Solarized Light token colors */
-  html.light-mode .highlight .c,
-  html.light-mode .highlight .cm,
-  html.light-mode .highlight .c1,
-  html.light-mode .highlight .cs  { color: #93a1a1 !important; }
-  html.light-mode .highlight .k,
-  html.light-mode .highlight .kd,
-  html.light-mode .highlight .kn,
-  html.light-mode .highlight .kp,
-  html.light-mode .highlight .kr,
-  html.light-mode .highlight .kc  { color: #859900 !important; }
-  html.light-mode .highlight .s,
-  html.light-mode .highlight .s1,
-  html.light-mode .highlight .s2,
-  html.light-mode .highlight .sb,
-  html.light-mode .highlight .sc,
-  html.light-mode .highlight .si,
-  html.light-mode .highlight .sx,
-  html.light-mode .highlight .ss  { color: #2aa198 !important; }
-  html.light-mode .highlight .m,
-  html.light-mode .highlight .mf,
-  html.light-mode .highlight .mi,
-  html.light-mode .highlight .mh,
-  html.light-mode .highlight .mo,
-  html.light-mode .highlight .il  { color: #2aa198 !important; }
-  html.light-mode .highlight .nf,
-  html.light-mode .highlight .nc,
-  html.light-mode .highlight .nd,
-  html.light-mode .highlight .nv,
-  html.light-mode .highlight .vc,
-  html.light-mode .highlight .vg,
-  html.light-mode .highlight .vi  { color: #268bd2 !important; }
-  html.light-mode .highlight .nb,
-  html.light-mode .highlight .bp  { color: #b58900 !important; }
-  html.light-mode .highlight .o,
-  html.light-mode .highlight .ow  { color: #859900 !important; }
-  html.light-mode .highlight .n,
-  html.light-mode .highlight .p   { color: #586e75 !important; }
-  html.light-mode .highlight .err { color: #dc322f !important; }
-  html.light-mode .highlight .no,
-  html.light-mode .highlight .ni,
-  html.light-mode .highlight .ne  { color: #cb4b16 !important; }
-</style>
-
-<!-- Dark code blocks to match neon theme -->
-<style>
-  div.highlighter-rouge,
-  figure.highlight {
-    background-color: #0d0d1a !important;
-    border-color: #2a2a4a !important;
-  }
-
-  div.highlighter-rouge::before,
-  figure.highlight::before {
-    background-color: #1a1a30 !important;
-    color: #666 !important;
-  }
-
-  .highlight,
-  .highlight pre {
-    background-color: #0d0d1a !important;
-    color: #cdd6f4 !important;
-  }
-
-  /* inline code */
-  code.highlighter-rouge {
-    background-color: #1a1a30 !important;
-    color: #cba6f7 !important;
-    border: 1px solid #2a2a4a !important;
-  }
-
-  /* token colors — dark-friendly palette */
-  .highlight .c,  .highlight .cm, .highlight .c1, .highlight .cs { color: #6c7086 !important; } /* comments */
-  .highlight .k,  .highlight .kd, .highlight .kn, .highlight .kp,
-  .highlight .kr, .highlight .kc                                   { color: #cba6f7 !important; } /* keywords */
-  .highlight .s,  .highlight .s1, .highlight .s2, .highlight .sb,
-  .highlight .sc, .highlight .sd, .highlight .si, .highlight .sx,
-  .highlight .ss                                                    { color: #a6e3a1 !important; } /* strings */
-  .highlight .m,  .highlight .mf, .highlight .mh, .highlight .mi,
-  .highlight .mo, .highlight .il                                    { color: #fab387 !important; } /* numbers */
-  .highlight .nf, .highlight .nc, .highlight .nd, .highlight .nv,
-  .highlight .vc, .highlight .vg, .highlight .vi                   { color: #89b4fa !important; } /* functions/vars */
-  .highlight .nb, .highlight .bp                                    { color: #89dceb !important; } /* builtins */
-  .highlight .o,  .highlight .ow                                    { color: #89dceb !important; } /* operators */
-  .highlight .n,  .highlight .p                                     { color: #cdd6f4 !important; } /* default text */
-  .highlight .err                                                   { color: #f38ba8 !important; } /* errors */
-  .highlight .nt                                                     { color: #f38ba8 !important; } /* tags */
-  .highlight .na                                                     { color: #89b4fa !important; } /* attributes */
-  .highlight .no, .highlight .ni, .highlight .ne                    { color: #fab387 !important; } /* constants */
 </style>
 
 <!-- end custom head snippets -->
