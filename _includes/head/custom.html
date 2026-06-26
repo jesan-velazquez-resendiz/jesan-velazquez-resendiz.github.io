@@ -100,35 +100,24 @@
 
 <!-- Light mode overrides (neon skin is dark by default) -->
 <style>
-  /* Accent color used throughout light mode — matches neon pink personality */
-  html.light-mode { --accent: #c026d3; --accent-hover: #a21caf; }
+  /* === LIGHT MODE === */
 
-  /* --- Body --- */
-  html.light-mode body {
+  /* Body */
+  html.light-mode body,
+  html.light-mode body.layout--single,
+  html.light-mode body.layout--archive {
     background-color: #ffffff !important;
     color: #111827 !important;
   }
 
-  /* --- Masthead / top bar --- */
+  /* Masthead */
   html.light-mode .masthead {
     background-color: #ffffff !important;
     border-bottom: 2px solid #f3e8ff !important;
-    box-shadow: 0 2px 8px rgba(192,38,211,0.08) !important;
+    box-shadow: 0 2px 10px rgba(192,38,211,0.07) !important;
   }
-  html.light-mode .greedy-nav,
-  html.light-mode .greedy-nav__toggle {
+  html.light-mode .greedy-nav {
     background-color: #ffffff !important;
-  }
-  html.light-mode .greedy-nav a,
-  html.light-mode .greedy-nav .masthead__menu-item a {
-    color: #111827 !important;
-  }
-  html.light-mode .greedy-nav a:hover,
-  html.light-mode .greedy-nav .masthead__menu-item a:hover {
-    color: var(--accent) !important;
-  }
-  html.light-mode .greedy-nav .visible-links a::before {
-    background: var(--accent) !important;
   }
   html.light-mode .greedy-nav button {
     background-color: #ffffff !important;
@@ -138,26 +127,60 @@
   html.light-mode .navicon::after {
     background: #111827 !important;
   }
-  /* Overflow dropdown */
+  html.light-mode .site-title,
+  html.light-mode .masthead__menu-item--lg a,
+  html.light-mode .masthead__menu-item a,
+  html.light-mode .greedy-nav a {
+    color: #111827 !important;
+  }
+  html.light-mode .masthead__menu-item a:hover,
+  html.light-mode .greedy-nav a:hover {
+    color: #c026d3 !important;
+  }
+  html.light-mode .greedy-nav .visible-links a::before {
+    background: #c026d3 !important;
+  }
   html.light-mode .greedy-nav .hidden-links {
     background: #ffffff !important;
     border: 1px solid #e9d5ff !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
   }
   html.light-mode .greedy-nav .hidden-links a {
     color: #111827 !important;
   }
   html.light-mode .greedy-nav .hidden-links a:hover {
-    color: var(--accent) !important;
+    color: #c026d3 !important;
     background: #fdf4ff !important;
   }
 
-  /* --- Author sidebar --- */
+  /* All links — magenta accent */
+  html.light-mode a,
+  html.light-mode a:link,
+  html.light-mode a:visited {
+    color: #c026d3 !important;
+  }
+  html.light-mode a:hover,
+  html.light-mode a:active {
+    color: #a21caf !important;
+  }
+  /* Nav links stay dark */
+  html.light-mode .greedy-nav a,
+  html.light-mode .greedy-nav a:link,
+  html.light-mode .greedy-nav a:visited,
+  html.light-mode .masthead__menu-item a,
+  html.light-mode .masthead__menu-item a:link,
+  html.light-mode .masthead__menu-item a:visited {
+    color: #111827 !important;
+  }
+
+  /* Author sidebar */
   html.light-mode .sidebar,
   html.light-mode .sidebar.sticky {
     background: transparent !important;
+    opacity: 1 !important;
   }
-  html.light-mode .author__name {
+  html.light-mode .author__name,
+  html.light-mode .author__name a {
     color: #111827 !important;
   }
   html.light-mode .author__bio,
@@ -168,32 +191,24 @@
   html.light-mode .author__urls-wrapper {
     background: transparent !important;
   }
+  html.light-mode .author__urls,
   html.light-mode .author__urls a {
     color: #374151 !important;
+    background: transparent !important;
   }
   html.light-mode .author__urls a:hover {
-    color: var(--accent) !important;
+    color: #c026d3 !important;
   }
   html.light-mode .author__urls li {
     border-top-color: #f3e8ff !important;
   }
-  html.light-mode .author__avatar img {
-    border-color: #e9d5ff !important;
-  }
 
-  /* --- Links (global) --- */
-  html.light-mode a {
-    color: var(--accent) !important;
-  }
-  html.light-mode a:hover {
-    color: var(--accent-hover) !important;
-  }
-
-  /* --- Page content --- */
+  /* Page content text */
   html.light-mode .page__content,
   html.light-mode .page__content p,
   html.light-mode .page__content li,
-  html.light-mode .page__content dd {
+  html.light-mode .page__content dd,
+  html.light-mode .page__content dt {
     color: #111827 !important;
   }
   html.light-mode .page__title {
@@ -211,7 +226,8 @@
     border-bottom-color: #e9d5ff !important;
   }
   html.light-mode .page__meta,
-  html.light-mode .page__meta p {
+  html.light-mode .page__meta p,
+  html.light-mode .page__date {
     color: #6b7280 !important;
   }
   html.light-mode .page__taxonomy-item {
@@ -219,10 +235,11 @@
     color: #374151 !important;
   }
   html.light-mode .page__taxonomy-item:hover {
-    color: var(--accent) !important;
+    color: #c026d3 !important;
+    border-color: #c026d3 !important;
   }
 
-  /* --- Archive / blog list --- */
+  /* Archive / blog list */
   html.light-mode .archive__item-title,
   html.light-mode .archive__item-title a {
     color: #0f172a !important;
@@ -239,23 +256,25 @@
     color: #6b7280 !important;
   }
 
-  /* --- Footer --- */
+  /* Footer */
   html.light-mode .page__footer {
     background-color: #fdf4ff !important;
     color: #374151 !important;
     border-top: 2px solid #e9d5ff !important;
   }
-  html.light-mode .page__footer a {
+  html.light-mode .page__footer a,
+  html.light-mode .page__footer a:link,
+  html.light-mode .page__footer a:visited {
     color: #374151 !important;
   }
   html.light-mode .page__footer a:hover {
-    color: var(--accent) !important;
+    color: #c026d3 !important;
   }
   html.light-mode .page__footer-follow li strong {
     color: #111827 !important;
   }
 
-  /* --- Tables --- */
+  /* Tables */
   html.light-mode table {
     color: #111827 !important;
     border-color: #e9d5ff !important;
@@ -267,18 +286,20 @@
   }
   html.light-mode td {
     border-color: #f3e8ff !important;
+    color: #111827 !important;
   }
   html.light-mode tr:nth-child(even) td {
     background-color: #fdf4ff !important;
   }
 
-  /* --- Notices / blockquotes --- */
+  /* Blockquotes */
   html.light-mode blockquote {
     color: #374151 !important;
-    border-left-color: var(--accent) !important;
+    border-left-color: #c026d3 !important;
+    background: #fdf4ff !important;
   }
 
-  /* --- Code blocks: GitHub-light style --- */
+  /* Code blocks */
   html.light-mode div.highlighter-rouge,
   html.light-mode figure.highlight {
     background-color: #f9fafb !important;
@@ -299,7 +320,7 @@
     color: #a21caf !important;
     border: 1px solid #e9d5ff !important;
   }
-  /* Token colors — Solarized Light */
+  /* Solarized Light token colors */
   html.light-mode .highlight .c,
   html.light-mode .highlight .cm,
   html.light-mode .highlight .c1,
@@ -332,7 +353,7 @@
   html.light-mode .highlight .vg,
   html.light-mode .highlight .vi  { color: #268bd2 !important; }
   html.light-mode .highlight .nb,
-  html.light-mode .highlight .bp  { color: #B58900 !important; }
+  html.light-mode .highlight .bp  { color: #b58900 !important; }
   html.light-mode .highlight .o,
   html.light-mode .highlight .ow  { color: #859900 !important; }
   html.light-mode .highlight .n,
