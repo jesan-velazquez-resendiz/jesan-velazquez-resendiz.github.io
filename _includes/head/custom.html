@@ -2,7 +2,7 @@
 
 <!-- start custom head snippets -->
 
-<!-- Apply saved theme before paint to avoid flash -->
+<!-- Apply saved theme before paint to avoid flash; expose toggleTheme globally -->
 <script>
   (function () {
     try {
@@ -13,6 +13,13 @@
       }
     } catch (e) {}
   })();
+
+  function toggleTheme() {
+    var isLight = document.documentElement.classList.toggle('light-mode');
+    try { localStorage.setItem('theme', isLight ? 'light' : 'dark'); } catch (e) {}
+    var icon = document.getElementById('theme-icon');
+    if (icon) { icon.className = isLight ? 'fas fa-moon' : 'fas fa-sun'; }
+  }
 </script>
 
 <link rel="apple-touch-icon" sizes="57x57" href="{{ base_path }}/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
@@ -42,7 +49,7 @@
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<!-- Layout width override + justified text -->
+<!-- Layout width override + justified text + theme toggle button -->
 <style>
   #main {
     max-width: 1600px !important;
@@ -50,6 +57,38 @@
 
   .page__content p {
     text-align: justify;
+  }
+
+  /* Make masthead a flex row so the button sits beside the nav */
+  .masthead__inner-wrap {
+    display: flex !important;
+    align-items: center !important;
+  }
+  .masthead__menu {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+
+  /* Toggle button styling */
+  #theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 1.15em;
+    padding: 0 0.8em;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  #theme-toggle:hover {
+    opacity: 1;
+  }
+  html.light-mode #theme-toggle {
+    color: #333 !important;
   }
 </style>
 
