@@ -27,7 +27,8 @@ Experience
 
 Publications
 ======
-- I. Jesán Velázquez-Reséndiz and Yuri G. Rubo, *Polarization dynamics of trapped polariton condensates with \\(\mathcal{PT}\\) symmetry*, Phys. Rev. B 109, 085312 (2024).
+- C., Velázquez-Reséndiz, I. J., & Bermudez, A. (2026). [*Optimizing bias-tailored quantum error correction beyond code-capacity noise*](https://arxiv.org/abs/2606.17709). arXiv preprint arXiv:2606.17709
+- I. Jesán Velázquez-Reséndiz and Yuri G. Rubo, [*Polarization dynamics of trapped polariton condensates with \\(\mathcal{PT}\\) symmetry*](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.085312), Phys. Rev. B 109, 085312 (2024).
   
 Talks
 ======
